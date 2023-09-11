@@ -3,6 +3,7 @@ package com.spicejet.utils;
 import org.openqa.selenium.support.PageFactory;
 
 
+import com.spicejet.pages.TwoWay;
 import com.spicejet.pages.OneTrip;
 import org.testng.Assert;
 import com.spicejet.utils.*;
@@ -89,10 +90,33 @@ public class W3Wrappers extends SeWrappers {
 			}
 			
 		
+				}
+		public void TwoWay(String kk,String majj)
+		{
+			try
+			{
+				TwoWay tp2= PageFactory.initElements(driver, TwoWay.class);
+				tp2.twoWays(kk,majj);
+			}
+
+			catch(Exception ex)
+			{
+				ex.printStackTrace();
+		
+		
+				
+				
+				
+				
+				
+			
+		
 			
 		}
 		
-	}
+		}
+}
+
 
 
 

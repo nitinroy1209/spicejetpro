@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-11T19:29:23 IST" name="Default suite" finished-at="2023-09-11T19:29:51 IST" duration-ms="27788">
+  <suite started-at="2023-09-11T21:02:16 IST" name="Default suite" finished-at="2023-09-11T21:02:47 IST" duration-ms="31892">
     <groups>
     </groups>
-    <test started-at="2023-09-11T19:29:23 IST" name="Default test" finished-at="2023-09-11T19:29:51 IST" duration-ms="27788">
-      <class name="com.spicejet.test.OneTripTest">
-        <test-method signature="testOfOneWay()[pri:0, instance:com.spicejet.test.OneTripTest@5fe94a96]" started-at="2023-09-11T19:29:23 IST" name="testOfOneWay" finished-at="2023-09-11T19:29:50 IST" duration-ms="27520" status="PASS">
+    <test started-at="2023-09-11T21:02:16 IST" name="Default test" finished-at="2023-09-11T21:02:47 IST" duration-ms="31892">
+      <class name="com.spicejet.test.TwoWayTests">
+        <test-method signature="two()[pri:0, instance:com.spicejet.test.TwoWayTests@5fe94a96]" started-at="2023-09-11T21:02:16 IST" name="two" finished-at="2023-09-11T21:02:47 IST" duration-ms="31661" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOfOneWay -->
-        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.spicejet.test.OneTripTest@5fe94a96]" started-at="2023-09-11T19:29:50 IST" name="closeAllBrowsers" finished-at="2023-09-11T19:29:51 IST" duration-ms="216" status="PASS">
+        </test-method> <!-- two -->
+        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.spicejet.test.TwoWayTests@5fe94a96]" started-at="2023-09-11T21:02:47 IST" name="closeAllBrowsers" finished-at="2023-09-11T21:02:47 IST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAllBrowsers -->
-      </class> <!-- com.spicejet.test.OneTripTest -->
+      </class> <!-- com.spicejet.test.TwoWayTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
