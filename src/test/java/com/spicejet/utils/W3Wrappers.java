@@ -3,18 +3,20 @@ package com.spicejet.utils;
 import org.openqa.selenium.support.PageFactory;
 
 
+import com.spicejet.pages.OneTrip;
 import org.testng.Assert;
 import com.spicejet.utils.*;
 import com.spicejet.pages.NavigateToSpiceJet;
 import com.spicejet.pages.Login;
 import com.spicejet.pages.SignUpPage;
+import com.spicejet.utils.SeWrappers;
 
 public class W3Wrappers extends SeWrappers {
 	SeWrappers se= new SeWrappers();
 	
 	//This class would contain all the reusable methods for W3Schools application
 	
-	public void loginFunctionality() {
+	public void loginFunctionality(String mo,String mobphn) {
 		
 		try
 		{
@@ -22,7 +24,7 @@ public class W3Wrappers extends SeWrappers {
 			
 		Login lpPage= PageFactory.initElements(driver, Login.class);//all the webelemnts and methods have been initialized of SignInpage with help of initelement method 
 			
-		lpPage.loginCheck();
+		lpPage.loginCheck(mo,mobphn);
 		
 		}
 		
@@ -50,7 +52,7 @@ public class W3Wrappers extends SeWrappers {
 		}
 	}
 		
-		public void SignU(String q, String h, String m, String k,String o, String u, String t, String b, String x,String g) {
+		public void SignU(String MR, String NITIN, String ROY, String IN,String l, String ll, String lll, String nitinroy12, String nRu953,String nRu9536) {
 			
 			try
 			{
@@ -58,7 +60,7 @@ public class W3Wrappers extends SeWrappers {
 			
 				SignUpPage sppages = PageFactory.initElements(driver,SignUpPage.class);
 			
-			sppages.signUpPageFunc("MR","NITIN","ROY","IN","8","2000","7001805900","nitinroy1209@gmail.com","nRu953","nRu953");
+			sppages.signUpPageFunc(MR,NITIN,ROY,IN,l,ll,lll,nitinroy12,nRu953,nRu9536);
 			
 			
 		}
@@ -66,10 +68,32 @@ public class W3Wrappers extends SeWrappers {
 			{
 				ex.printStackTrace();
 			}
+			
 		
+		}
+		
+		
+		
+		
+		public void OnWay(String k,String maj)
+		{
+			try
+			{
+				OneTrip tp1= PageFactory.initElements(driver, OneTrip.class);
+				tp1.oneWy(k,maj);
+			}
+
+			catch(Exception ex)
+			{
+				ex.printStackTrace();
+			}
+			
+		
+			
+		}
 		
 	}
 
-}
+
 
 

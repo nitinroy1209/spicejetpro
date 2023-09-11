@@ -5,29 +5,24 @@ import org.testng.annotations.Test;
 import com.spicejet.utils.SeWrappers;
 import com.spicejet.utils.Reports;
 import com.spicejet.utils.W3Wrappers;
-import com.spicejet.pages.Login;
+import com.spicejet.pages.OneTrip;
 
-public class LoginTest  extends SeWrappers{
+
+public class OneTripTest extends SeWrappers {
 	
-	
-	W3Wrappers bb= new W3Wrappers();
 	SeWrappers se= new SeWrappers();
+	W3Wrappers w3 = new W3Wrappers();
+	
 	@Test
-public void click() {
-		
+	public void testOfOneWay() {
 		
 		try
 		{
 			launchBrowser("https://www.spicejet.com/");
-			//switchWindows();
-			
-			
-			
-			bb.loginFunctionality("9333026730","Nitin@klre090");
-			
-			
-			
+			//tp.oneWy("IXA");
+			w3.OnWay("IXA","MAA");
 		}
+		
 		
 		catch(Exception ex)
 		{
@@ -35,18 +30,10 @@ public void click() {
 			ex.printStackTrace();
 		}
 	}
-
+		
+	}
 	
-	
-	
-}
-
-	
-	
-	
-
-
-	
+		
 	
 
 
