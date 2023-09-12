@@ -3,7 +3,12 @@ import com.spicejet.utils.SeWrappers;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class OneTrip extends SeWrappers {
+
+public class ProceedToBookingPage  extends SeWrappers{
+
+	//*[@data-testid='spicesaver-flight-select-radio-button-0']
+	
+	//*[@data-testid="continue-search-page-cta"]
 	
 	@FindBy(xpath="//div[@class='css-76zvg2 r-jwli3a r-ubezar r-1ozqkpa']")
 	WebElement flight;
@@ -21,19 +26,14 @@ WebElement ToField;
 	@FindBy(xpath="/html/body/div[2]/div/div/div[1]/div[3]/div[2]/div[7]/div[2]/div")
 	WebElement last;
 	
+	@FindBy(xpath="//*[@data-testid='spicesaver-flight-select-radio-button-0']")
+	WebElement pri;
+	@FindBy(xpath="//div[@class='css-1dbjc4n r-1awozwy r-1xfd6ze r-1loqt21 r-18u37iz r-1777fci r-1w50u8q r-ah5dr5 r-1otgn73']")
+	WebElement fin;
 	
-	//@FindBy(xpath="//div[@class='css-76zvg2 r-cqee49 r-ubezar r-1kfrs79 r-1ozqkpa' and text()='India']")
-	//WebElement India;
-	//@FindBy(xpath="")
-	//WebElement agartala;
-	
-	//@FindBy(xpath="/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[3]/div[2]/div[3]/div[1]/div[3]/div[1]/div[2]/input[1]")
-	//WebElement nio;
-	
-	
-	public void oneWy(String Agra,String ma)  {
+	public void proceedToBook(String Agra,String ma) 
+	{
 		
-		//switchWindows();
 		click(flight);
 		click(radiobuttononeside);
 		click(FRomField);
@@ -48,17 +48,12 @@ WebElement ToField;
 		
 		click(last);
 		
-		//click(India);
-		//click(agartala);
-		//typeText(FRomField,DEL);
-		
-		//Thread.sleep(4000);
-		
-		//click(nio);
-		//typeText(nio,amd);
-		//Thread.sleep(4000);
+		click(pri);
+		click(fin);
 		
 	}
 	
-
+	
 }
+
+

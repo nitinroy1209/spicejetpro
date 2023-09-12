@@ -63,7 +63,7 @@ public class SignUpPage extends SeWrappers{
 		@FindBy (xpath ="//a[@class='nav-link'][normalize-space()='Flights']")
 		WebElement flight;
 		
-		 public void signUpPageFunc(String TitleValue, String Nitin, String Roy,String Indi, String nine, String twothousand, String ph,String nitinroy1, String nRu953,String nn) throws InterruptedException  
+		 public void signUpPageFunc(String TitleValue, String Nitin, String Roy,String Indi, String nine, String twothousand, String ph,String nitinroy1, String nRu953,String nn)  
 			{
 			// dismissAlert();
 			 //driver.switchTo().defaultContent();
@@ -106,7 +106,6 @@ public class SignUpPage extends SeWrappers{
 				
 				click(phoneno);
 				typeText(phoneno,ph);
-				Thread.sleep(4000);
 				
 				click(emailid);
 				typeText(emailid,nitinroy1);
@@ -114,9 +113,7 @@ public class SignUpPage extends SeWrappers{
 				click(password);
 				typeText(password,nRu953);
 				click(confirmpassword);
-				Thread.sleep(4000);
 				typeText(confirmpassword, nn);
-				Thread.sleep(5000);
 				click(checkbox);
 				
 				

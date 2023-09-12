@@ -11,7 +11,7 @@ public class NavigateToSpiceJet  extends SeWrappers{
 	 WebElement manageBooking;
 	 
 
-	 public void setManageBooking() throws InterruptedException
+	 public void setManageBooking() 
 		{
 		 
 		 //frameByIndex(0);
@@ -19,7 +19,6 @@ public class NavigateToSpiceJet  extends SeWrappers{
 		 //acceptAlert();
 
 		 click(manageBooking);
-		 Thread.sleep(3000);
 		
 			
 		}

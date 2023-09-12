@@ -3,6 +3,7 @@ package com.spicejet.utils;
 import org.openqa.selenium.support.PageFactory;
 
 
+import com.spicejet.pages.ProceedToBookingPage;
 import com.spicejet.pages.TwoWay;
 import com.spicejet.pages.OneTrip;
 import org.testng.Assert;
@@ -115,6 +116,26 @@ public class W3Wrappers extends SeWrappers {
 		}
 		
 		}
+		
+		
+		public void proceed(String kkk, String jjj) {
+			
+			
+			try
+			{
+				ProceedToBookingPage  tp3= PageFactory.initElements(driver, ProceedToBookingPage .class);
+				tp3.proceedToBook(kkk,jjj);
+				
+				
+			}
+			
+			
+
+			catch(Exception ex)
+			{
+				ex.printStackTrace();
+		}
+}
 }
 
 
