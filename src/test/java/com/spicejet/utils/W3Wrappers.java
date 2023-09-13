@@ -3,6 +3,7 @@ package com.spicejet.utils;
 import org.openqa.selenium.support.PageFactory;
 
 
+import com.spicejet.pages.Dummy;
 import com.spicejet.pages.ProceedToBookingPage;
 import com.spicejet.pages.TwoWay;
 import com.spicejet.pages.OneTrip;
@@ -136,6 +137,34 @@ public class W3Wrappers extends SeWrappers {
 				ex.printStackTrace();
 		}
 }
+		
+		
+		
+		
+		
+		
+	public void proceedDummyPag(String kkk, String jjj,String mk, String lo, String lp,String li, String lii, String lu, String lh,String lq) {
+			
+			
+			try
+			{
+				Dummy  dp1= PageFactory.initElements(driver, Dummy.class);
+				dp1.proceedToDummy(kkk,jjj,mk,lo,lp,li,lii,lu,lh,lq);
+				
+				
+			}
+			
+			
+
+			catch(Exception ex)
+			{
+				ex.printStackTrace();
+		}
+}
+		
+		
+		
+		
 }
 
 
