@@ -3,6 +3,7 @@ package com.spicejet.utils;
 import org.openqa.selenium.support.PageFactory;
 
 
+import com.spicejet.pages.ValidateCheckInFlightStatusManageBooking;
 import com.spicejet.pages.Dummy;
 import com.spicejet.pages.ProceedToBookingPage;
 import com.spicejet.pages.TwoWay;
@@ -162,6 +163,58 @@ public class W3Wrappers extends SeWrappers {
 		}
 }
 		
+		
+	public void flght() {
+		try
+		{
+		ValidateCheckInFlightStatusManageBooking  fg1= PageFactory.initElements(driver, ValidateCheckInFlightStatusManageBooking.class);
+		fg1.CheckI();
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+	}
+}
+		
+	
+	
+	
+	public void flight1() {
+		
+		try
+		{
+			
+		
+		
+		ValidateCheckInFlightStatusManageBooking  fg2= PageFactory.initElements(driver, ValidateCheckInFlightStatusManageBooking.class);
+		fg2.flight();
+		
+		
+	}
+		
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	
+	public void flight3() {
+		
+		
+		try
+		{
+		ValidateCheckInFlightStatusManageBooking  fg3= PageFactory.initElements(driver, ValidateCheckInFlightStatusManageBooking.class);
+		fg3.ManageBookin();
+
+		
+	}
+		
+		
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
 		
 		
 		

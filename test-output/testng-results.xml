@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-13T15:09:22 IST" name="Default suite" finished-at="2023-09-13T15:10:06 IST" duration-ms="43969">
+  <suite started-at="2023-09-13T20:46:00 IST" name="Default suite" finished-at="2023-09-13T20:46:09 IST" duration-ms="9237">
     <groups>
     </groups>
-    <test started-at="2023-09-13T15:09:22 IST" name="Default test" finished-at="2023-09-13T15:10:06 IST" duration-ms="43969">
-      <class name="com.spicejet.test.DummyPageTest">
-        <test-method signature="dummyTest()[pri:0, instance:com.spicejet.test.DummyPageTest@5fe94a96]" started-at="2023-09-13T15:09:22 IST" name="dummyTest" finished-at="2023-09-13T15:10:06 IST" duration-ms="43640" status="PASS">
+    <test started-at="2023-09-13T20:46:00 IST" name="Default test" finished-at="2023-09-13T20:46:09 IST" duration-ms="9237">
+      <class name="com.spicejet.test.ChckFsatusManage">
+        <test-method signature="chkValidateTest()[pri:0, instance:com.spicejet.test.ChckFsatusManage@765d7657]" started-at="2023-09-13T20:46:00 IST" name="chkValidateTest" finished-at="2023-09-13T20:46:09 IST" duration-ms="8972" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dummyTest -->
-        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.spicejet.test.DummyPageTest@5fe94a96]" started-at="2023-09-13T15:10:06 IST" name="closeAllBrowsers" finished-at="2023-09-13T15:10:06 IST" duration-ms="260" status="PASS">
+        </test-method> <!-- chkValidateTest -->
+        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.spicejet.test.ChckFsatusManage@765d7657]" started-at="2023-09-13T20:46:09 IST" name="closeAllBrowsers" finished-at="2023-09-13T20:46:09 IST" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeAllBrowsers -->
-      </class> <!-- com.spicejet.test.DummyPageTest -->
+      </class> <!-- com.spicejet.test.ChckFsatusManage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

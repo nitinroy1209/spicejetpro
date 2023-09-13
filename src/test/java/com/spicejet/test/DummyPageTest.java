@@ -1,5 +1,6 @@
 package com.spicejet.test;
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 import com.spicejet.utils.SeWrappers;
 import com.spicejet.utils.Reports;
